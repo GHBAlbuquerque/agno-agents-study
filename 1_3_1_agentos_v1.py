@@ -5,7 +5,7 @@ from agno.os import AgentOS
 from dotenv import load_dotenv
 load_dotenv()
 
-test_agent = Agent(
+agent = Agent(
     name="my-test-agent",
     model=OpenAIResponses(id="gpt-5.4-nano", reasoning_effort="low"),
     instructions=["You are a helpful AI Assistant"],
@@ -14,7 +14,7 @@ test_agent = Agent(
 agent_os = AgentOS(
     name="my-first-os",
     description="My first Agent OS",
-    agents=[test_agent]
+    agents=[agent]
     )
 
 app = agent_os.get_app()
