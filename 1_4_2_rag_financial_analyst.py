@@ -82,7 +82,7 @@ agent = Agent(
     enable_agentic_memory=True,
     add_memories_to_context=True,
 
-    # RAG atualizado
+    # RAG updated
     knowledge=knowledge,
     search_knowledge=True
 )
